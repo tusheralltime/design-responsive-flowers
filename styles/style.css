@@ -144,6 +144,27 @@ main section {
   color: #111111;
   margin-bottom: 30px;
 }
+
+/* Plants Lover section */
+.Plants-Lover {
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.plan-lovers-img {
+  width: 100%;
+  max-width: 540px;
+}
+.plans-lover-content {
+  max-width: 540px;
+}
+.lover-title {
+  margin-bottom: 35px;
+}
+.lover-content-description li {
+  margin-bottom: 20px;
+}
+
 /* Mobile Device */
 @media only screen and (max-width: 576px) {
   /* nav styles start*/
@@ -200,5 +221,18 @@ main section {
   .btn {
     width: 100%;
     padding: 12px 0;
+  }
+
+  /* Plants Lover styles */
+  .Plants-Lover {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .Plants-Lover ul li {
+    margin-left: 30px;
+  }
+  .lover-title {
+    font-size: 32px;
+    margin-bottom: 16px;
   }
 }
