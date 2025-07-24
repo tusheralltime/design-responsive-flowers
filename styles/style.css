@@ -30,6 +30,9 @@
 .display-flex {
   display: flex;
 }
+.text-center {
+  text-align: center;
+}
 /* Header styles */
 
 /* nav styles */
@@ -82,6 +85,65 @@ nav ul li a:hover {
   width: 570px;
 }
 
+/* main styles */
+
+main section {
+  margin-top: 85px;
+}
+.section-title {
+  font-size: 50px;
+  color: #000000;
+  font-weight: 700;
+}
+.section-description {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+/* Plants Section styles */
+
+.plants-title .our-plan {
+  color: #e95a08;
+}
+.plants-description {
+  margin-bottom: 50px;
+}
+.btn {
+  background-color: #e95a08;
+  color: #ffffff;
+  padding: 26px 50px;
+  width: 270px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.card {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-image {
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.card-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #111111;
+}
+.card-sub-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 30px;
+}
 /* Mobile Device */
 @media only screen and (max-width: 576px) {
   /* nav styles start*/
@@ -116,5 +178,27 @@ nav ul li a:hover {
   }
   .hero-description {
     font-size: 16px;
+  }
+
+  /* Plants section styles */
+  .Plants {
+    padding: 0 20px;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-image {
+    max-width: 180px;
+  }
+  .card-title {
+    font-size: 20px;
+  }
+  .card-sub-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .btn {
+    width: 100%;
+    padding: 12px 0;
   }
 }
