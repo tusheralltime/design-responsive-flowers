@@ -61,9 +61,9 @@
     <!-- Header end here -->
 
     <!-- Main start here -->
-    <main class="container">
+    <main>
       <!-- Plants section start  -->
-      <section class="Plants">
+      <section class="Plants container">
         <h3 class="section-title plants-title text-center noto-serif-font">
           <span class="our-plan">Our</span> Plants
         </h3>
@@ -160,12 +160,18 @@
       <!-- Plants section end  -->
 
       <!-- Plants Lover section start -->
-      <section class="Plants-Lover display-flex">
-        <img
-          src="./assets/images/flower-store.png"
-          alt=""
-          class="plan-lovers-img"
-        />
+      <section class="Plants-Lover container display-flex">
+        <div class="plans-image">
+          <img
+            src="./assets/images/flower-store.png"
+            alt=""
+            class="plan-lovers-img"
+          />
+          <div class="trusted-badge">
+            <img src="./assets/images/icons/trusted-badge.png" alt="" />
+          </div>
+        </div>
+
         <div class="plans-lover-content">
           <h3 class="section-title lover-title noto-serif-font">
             Flower & Plants Lover
@@ -190,9 +196,74 @@
         </div>
       </section>
       <!-- Plants Lover section end -->
+
+      <!-- Join section start -->
+      <section class="join">
+        <h4 class="join-title">Join the colorful Bunch</h4>
+        <div class="subscribe-form">
+          <input type="text" name="" id="" placeholder="Write email" />
+          <button class="join-btn">Subscribe</button>
+        </div>
+      </section>
+
+      <!-- Join section end -->
     </main>
     <!-- Main end here -->
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="column">
+          <img
+            src="./assets/images/icons/logo.png"
+            alt=""
+            class="footer-logo"
+          />
+          <p class="section-description inter-font">
+            Indulge your senses with the <br />
+            beauty and fragrance of our fresh <br />flower shop.
+          </p>
+        </div>
+        <div class="column">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <ul>
+            <li><a href="">Features</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <img
+            class="icon"
+            src="./assets/images/icons/icon-linkedin.png"
+            alt=""
+          />
+          <img
+            class="icon"
+            src="./assets/images/icons/icon-twitter.png"
+            alt=""
+          />
+          <img
+            class="icon"
+            src="./assets/images/icons/icon-facebook.png"
+            alt=""
+          />
+          <img
+            class="icon"
+            src="./assets/images/icons/icon-youtube.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

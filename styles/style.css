@@ -87,9 +87,6 @@ nav ul li a:hover {
 
 /* main styles */
 
-main section {
-  margin-top: 85px;
-}
 .section-title {
   font-size: 50px;
   color: #000000;
@@ -101,7 +98,9 @@ main section {
   color: #000000;
 }
 /* Plants Section styles */
-
+.Plants {
+  padding-top: 100px;
+}
 .plants-title .our-plan {
   color: #e95a08;
 }
@@ -111,7 +110,7 @@ main section {
 .btn {
   background-color: #e95a08;
   color: #ffffff;
-  padding: 26px 50px;
+  padding: 19px 80px;
   width: 270px;
   border: none;
   font-size: 16px;
@@ -150,11 +149,26 @@ main section {
   align-items: center;
   justify-content: space-between;
   gap: 60px;
+  padding-top: 200px;
 }
-.plan-lovers-img {
+.plans-image {
   width: 100%;
   max-width: 540px;
+  position: relative;
 }
+.plans-lover-img {
+  width: 100%;
+}
+.trusted-badge {
+  position: absolute;
+  display: flex;
+  height: 285px;
+  width: 285px;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+
 .plans-lover-content {
   max-width: 540px;
 }
@@ -163,6 +177,77 @@ main section {
 }
 .lover-content-description li {
   margin-bottom: 20px;
+}
+
+/* Join section styles */
+.join {
+  width: 100%;
+  padding: 100px 0;
+  background-image: url(../assets/images/news-letter-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 85px;
+}
+
+.join-title {
+  color: #ffffff;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 830px;
+  margin: 0 auto;
+}
+.join input {
+  padding: 15px 20px;
+  flex: 1;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 16px;
+}
+.join-btn {
+  padding: 15px 40px;
+  color: white;
+  background-color: #e95a08;
+  border: none;
+  font-size: 16px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.join-btn:hover {
+  background-color: #c94c06;
+}
+/* footer */
+footer {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.footer-container {
+  display: flex;
+  gap: 110px;
+}
+.footer-container ul li {
+  list-style: none;
+  line-height: 32px;
+}
+.footer-container ul li a {
+  text-decoration: none;
+  color: #6b7280;
+}
+.footer-logo {
+  width: 100px;
+  height: auto;
+}
+
+.footer-container .column .icon {
+  margin-left: 24px;
 }
 
 /* Mobile Device */
@@ -178,15 +263,11 @@ main section {
     display: block;
     margin-left: 0;
   }
-  nav ul li:not(:last-child) {
-    display: none;
-  }
   /* nav styles end*/
 
   /* hero section styles */
   .hero-section {
     flex-direction: column-reverse;
-    padding: 0 20px;
   }
   .hero-section-img {
     width: 100%;
@@ -196,9 +277,11 @@ main section {
   .hero-title {
     font-size: 38px;
     margin-bottom: 10px;
+    padding: 0 20px;
   }
   .hero-description {
     font-size: 16px;
+    padding: 0 20px;
   }
 
   /* Plants section styles */
@@ -207,13 +290,15 @@ main section {
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
   .card-image {
-    max-width: 180px;
+    max-width: 250px;
   }
   .card-title {
     font-size: 20px;
   }
+
   .card-sub-title {
     font-size: 20px;
     margin-bottom: 15px;
@@ -226,13 +311,50 @@ main section {
   /* Plants Lover styles */
   .Plants-Lover {
     flex-direction: column;
-    padding: 0 20px;
+    padding: 50px 20px 0px 20px;
   }
+  .plans-image {
+    max-width: 100%;
+  }
+  .plan-lovers-img {
+    width: 100%;
+    height: auto;
+  }
+  .trusted-badge {
+    display: none;
+  }
+
   .Plants-Lover ul li {
     margin-left: 30px;
   }
   .lover-title {
     font-size: 32px;
     margin-bottom: 16px;
+  }
+
+  /* join styles */
+  .join-title {
+    font-size: 20px;
+  }
+  .subscribe-form {
+    width: 300px;
+  }
+  .join-btn {
+    padding: 15px 20px;
+  }
+
+  /* footer */
+  footer {
+    padding-left: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-container .column .footer-logo {
+    margin-bottom: 15px;
+  }
+  .footer-container .column .icon:first-child {
+    margin-left: 0;
   }
 }
